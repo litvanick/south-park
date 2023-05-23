@@ -1,0 +1,142 @@
+@font-face {
+	font-family: 'Verdana';
+	src: url('../fonts/Verdana.ttf') format('truetype');
+}
+
+body {
+	margin: 0;
+	font-family: Verdana;
+	background-color: black;
+}
+
+main {
+	background: url(../img/maxresdefault_copy.jpg) no-repeat;
+	background-size: contain;
+	padding-top: 350px;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.header {
+	color: #eeeeee;
+	font-weight: bold;
+	font-size: 84px;
+	position: absolute;
+	margin-left: 28%;
+	text-shadow: 0px 8px 4px #111111;
+}
+
+header > h1 > span {
+	color: #d35400;
+	text-shadow: 0px 8px 4px #111111;
+}
+
+.box {
+	border-radius: 10px;
+	padding-top: 10px;
+	display: flex;
+	justify-content: space-around;
+	background-color: #111111;
+	width: 1200px;
+}
+
+.content {
+	border-radius: 10px;
+	border: solid #d35400 3px;
+	width: 850px;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	background-color: #3d3d3d;
+}
+
+.seria_header { /* Название серии */
+	display: flex;
+	align-items: center;
+	color: #eeeeee;
+	font-size: 22px;
+	width: 100%;
+	background-color: #d35400;
+}
+
+.seria-box {
+	display: flex;
+	justify-content: space-around;
+}
+
+.seria_logo { /* Картинка - аватарка серии */
+	margin-top: 20px;
+	margin-left: 20px;
+	width: 30%;
+	background-color: #eeeeee;
+}
+
+div > div > div > div > p {
+	padding-top: 15px; /* Редактор высоты текста в блоке */
+	padding-left: 15px;
+	padding-right: 15px;
+	width: 70%;
+	color: #eeeeee;
+	font-size: 20px;
+}
+
+
+.seria_watch_button {
+	border: none;
+	text-align: center;
+	font-size: 20px;
+	border-radius: 5px;
+	padding: 10px;
+	background-color: #2ecc71;
+}
+
+
+
+
+
+
+.changer {
+	border-radius: 10px;
+	border: solid #d35400 3px;
+	width: 250px;
+	height: 400px;
+	background-color: #3d3d3d;
+}
+
+
+div > div > span { /* Для надписи СМОТРЕТЬ */
+	display: block;
+	padding-left: 10px;
+	background-color: #d35400;
+	font-size: 32px;
+	font-weight: bold;
+	color: #eeeeee;
+	padding-bottom: 2px;
+}
+
+div > div > ul > li {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	list-style-type: none;
+}
+div > div > ul {
+	padding-right: 40px;
+}
+
+div > div > ul > li > div { /* Sezone Button */
+	border-radius: 10px;
+	border-bottom: solid #eeeeee 2px;
+	margin-top: 7px;
+	padding-bottom: 3px;
+	text-align: center;
+	width: 200px;
+	font-size: 18px;
+	color: #eeeeee;
+	text-decoration: none;
+	transition: 0.2s;
+}
+
+div > div > ul > li > div:hover {
+	font-size: 18px;
+	background-color: #d35400;
+}
