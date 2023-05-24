@@ -52,10 +52,11 @@
                 this.$router.push(`/season/${this.episode.season}`)
             },
             previous() {
+                if (this.episode.episode === 1) return;
                 this.$router.push(`/season/${this.episode.season}/episode/${this.episode.episode - 1}`)
             },
             next() {
-                console.log(this.episode)
+                if (this.episode.episode === 2) return;
                 this.$router.push(`/season/${this.episode.season}/episode/${this.episode.episode + 1}`)
             },
         },

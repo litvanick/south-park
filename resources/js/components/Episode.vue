@@ -20,7 +20,6 @@
             <button
                 @click="watchEpisode"
                 class="seria_watch_button"
-                style="color: #eeeeee;"
             >Смотреть</button>
     	</div>
     </div>
