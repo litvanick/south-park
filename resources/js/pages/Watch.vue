@@ -44,19 +44,25 @@
         },
         methods: {
             async loadEpisode() {
-                let params = this.$route.params;
+                let params = this.$route.params
                 let response = await axios.get(`/api/season/${params.season}/episode/${params.episode}`);
-                this.episode = response.data;
+                this.episode = response.data
             },
             back() {
-                this.$router.back()
+                this.$router.push(`/season/${this.episode.season}`)
             },
             previous() {
-                this.$router.push(`/season/${this.season}/episode/${this.episode - 1}`)
+                this.$router.push(`/season/${this.episode.season}/episode/${this.episode.episode - 1}`)
             },
             next() {
-                this.$router.push(`/season/${this.season}/episode/${this.episode + 1}`)
+                console.log(this.episode)
+                this.$router.push(`/season/${this.episode.season}/episode/${this.episode.episode + 1}`)
             },
+        },
+        watch: {
+            $route(to, from) {
+                this.loadEpisode()
+            }
         }
     }
 </script>

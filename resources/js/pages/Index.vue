@@ -30,6 +30,11 @@
                 let response = await axios.get(`/api/season/${season}`);
                 this.episodes = response.data;
             },
+        },
+        watch: {
+            $route(to, from) {
+                this.loadEpisodes()
+            }
         }
     }
 </script>
